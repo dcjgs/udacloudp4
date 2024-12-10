@@ -4,4 +4,4 @@ jspm_packages
 
 # Serverless directories
 .serverless
-.serverless-todo-app-v3
+serverless-todo-app-v3
