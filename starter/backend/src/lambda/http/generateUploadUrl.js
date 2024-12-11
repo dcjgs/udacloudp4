@@ -42,9 +42,11 @@ export const handler = middy()
     return {
       statusCode: 200, // success
       headers: {
-        'Access-Control-Allow-Origin': '*' // allow access from any src
+        'Access-Control-Allow-Origin': '*',// allow access from any src
+        'Access-Control-Allow-Credentials': true
       },
       body: JSON.stringify({
         uploadUrl: uploadUrl // signed url
-    };
+    }) //missing parenthis
+  };
   });
